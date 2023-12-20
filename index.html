@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="./output.css" rel="stylesheet">
+     <link rel="stylesheet" href="./font/font/font.css">
+</head>
+<title  alt=""></title>
+
+<body class="dark:bg-slate-700 bg-black">
+
+<div  class=" max-w-sm md:max-w-2xl h-screen items-center mx-auto  justify-center mt-[15%] md:mt-[15%] lg:mt-[12%] p-10">
+     <div class="dark:bg-slate-900 transition-all border-8 border-red-500 text-white bg-slate-700 rounded-xl p-8 m-2">
+          <h1 id="label" class="dark:text-white text-center font-wahid text-[110px] font-bold">0</h1>
+          <div class="flex flex-col justify-center mx-auto text-white space-y-6 text-xl w-full md:space-y-0 md:space-x-4 md:flex-row ">
+          <a href="#" id="count" name="count" class="p-4 mx-2 md:w-60 border-2 md:mx-0 px-4 rounded-xl shadow-lg hover:scale-105 shadow-red-500 hover:text-indigo-600 hover:bg-white bg-lime-600 duration-300  focus:border-4 border-orange-600 text-center">Count</a>
+          <a href="#" id="reset" name="reset" class="p-4 mx-2 md:w-60 border-2 md:mx-0 px-4 rounded-xl shadow-lg hover:scale-105 shadow-red-500 hover:text-indigo-600 hover:bg-white bg-lime-600 duration-300  focus:border-4 border-orange-600 text-center">Reset</a>
+          <a href="#" id="decrease" name="decrease" class="p-4 mx-2 md:w-60 border-2 md:mx-0 px-4 rounded-xl shadow-lg hover:scale-105 shadow-red-500 hover:text-indigo-600 hover:bg-white bg-lime-600 duration-300  focus:border-4 border-orange-600 text-center">Decrease</a>
+        </div>
+
+     </div>
+</div>
+
+
+<script>
+   let count = 0;
+     document.getElementById("count").onclick = function () {
+          count += 1;
+          document.getElementById("label").innerHTML = count;
+     }
+     document.getElementById("reset").onclick = function () {
+          count = 0;
+          document.getElementById("label").innerHTML = count;
+     }
+     document.getElementById("decrease").onclick = function () {
+          count -= 1;
+          document.getElementById("label").innerHTML = count;
+     }
+</script>
+
+</body>
+
+</html>
